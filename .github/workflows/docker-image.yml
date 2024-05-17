@@ -18,4 +18,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag alaaaldin24/test:v1
     - name: Push the Docker image
-      run: docker login -u alaaaldin24 -p ${{ secrets.ALAA }} && docker push alaaaldin24/test:v1
+      run: docker login -u alaaaldin24 -p ${{ secrets.GIT }} && docker push alaaaldin24/test:v1
