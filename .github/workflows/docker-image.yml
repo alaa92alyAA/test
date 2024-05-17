@@ -16,6 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ijn35807/docker-image-autobuild:latest
+      run: docker build . --file Dockerfile --tag alaaaldin24/test:v1
     - name: Push the Docker image
       run: docker login -u alaaaldin24 -p ${{ secrets.DOCKER_TOKEN }} && docker push alaaaldin24/test:v1
