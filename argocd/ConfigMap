@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-color-config
+  namespace: default
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom NGINX Page</title>
+        <style>
+            body {
+                background-color: lightgreen; /* Background color */
+                color: darkred;               /* Text color */
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to the Custom NGINX Page!</h1>
+        <p>This page has a light green background and dark red text.</p>
+    </body>
+    </html>
