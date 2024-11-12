@@ -33,13 +33,4 @@ spec:
       port: 80
       targetPort: 80
   type: NodePort  # Use ClusterIP or NodePort based on your needs
----
-volumes:
-  - name: html-content
-    configMap:
-      name: nginx-color-config
-      items:
-        - key: index.html
-          path: index.html
-
 
