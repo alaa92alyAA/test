@@ -8,8 +8,8 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
   source:
-    repoURL: https://github.com/your-org/your-app-repo.git   # Git repository URL
-    targetRevision: main                                    # Branch, tag, or commit hash
+    repoURL: https://github.com/alaa92alyAA/test.git   # Git repository URL
+    targetRevision: master                                   # Branch, tag, or commit hash
     path: test                                               # Relative path to the folder inside the repo
   project: default
   syncPolicy:
