@@ -1,5 +1,5 @@
 spec:
   source:
-    repoURL: https://github.com/your-org/your-app-repo.git   # Git repo URL
+    repoURL: https://github.com/alaa92alyAA/test/tree/master   # Git repo URL
     targetRevision: main                                   # Branch, tag, or commit hash
     path: apps/hello-world                                  # Path within the repo where Kubernetes manifests are stored
